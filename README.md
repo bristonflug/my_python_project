@@ -75,7 +75,7 @@ The final `main()` call starts the program. No main guard is used. Each function
 | Add/update function | Passed: existing stock increased and a new item appeared in inventory. |
 | Validation and comments | Passed: letters, negatives, blanks, invalid menu choices, decimal quantities, malformed prices, Unicode digits, and oversized numeric text tested; comment above each function. |
 | Git commits | Three real stages: menu loop; inventory/view; add/restock and validation. Each stage was run and tested before its commit. |
-| Public GitHub repository | Pending account connection, creation/push, and public-history verification. No Canvas submission has been made. |
+| Public GitHub repository | Verified public at https://github.com/bristonflug/my_python_project. All three development commits are present in the main branch history. No Canvas submission has been made. |
 
 Development-only tests run outside this project folder using subprocess input and assertions. They are not part of the submitted application. The application imports no libraries and uses no try/except, comprehensions, lambda, classes, annotations, or type hints.
 
