@@ -1,3 +1,10 @@
+inventory = {
+    "burger": {"price": 9.50, "qty": 30, "reorder": 10},
+    "fries": {"price": 3.50, "qty": 25, "reorder": 8},
+    "chicken sandwich": {"price": 8.50, "qty": 20, "reorder": 6}
+}
+
+
 # Display the seven choices for The Grill.
 def show_menu():
     print("\nThe Grill - Restaurant Sales & Inventory Manager")
@@ -10,13 +17,25 @@ def show_menu():
     print("7. Save and exit")
 
 
+# Display each menu item's price, quantity, and reorder level.
+def view_inventory(inventory):
+    print("\nCurrent inventory")
+    for item in inventory:
+        print("Item:", item)
+        print("  Price: $", inventory[item]["price"])
+        print("  Quantity in stock:", inventory[item]["qty"])
+        print("  Reorder level:", inventory[item]["reorder"])
+
+
 # Repeat the menu until the user chooses to exit.
 def main():
     choice = ""
     while choice != "7":
         show_menu()
         choice = input("Choose an option (1-7): ").strip()
-        if choice in ["1", "2", "3", "4", "5", "6"]:
+        if choice == "1":
+            view_inventory(inventory)
+        elif choice in ["2", "3", "4", "5", "6"]:
             print("Coming soon")
         elif choice == "7":
             print("Goodbye! Saving will be added in Week 3.")
